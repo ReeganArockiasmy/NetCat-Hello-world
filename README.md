@@ -1,13 +1,16 @@
 # NetCat-Hello-world
- netcat  is  a simple unix utility which reads and writes data across network connections, using TCP or UDP protocol.
+
+ netcat is a simple unix utility which reads and writes data across
+ network connections, using TCP or UDP protocol.
+ 
  Uses of NetCat
 
 **Creating a Chat Server**
 
 For lisener ,type
----------------
-nc -lp <port>
----------------
+
+    nc -lp <port>
+
 For the client type
 ---------------
 nc <IP ADDRESS > <PORT>
