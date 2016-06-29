@@ -19,23 +19,24 @@ In your basic html file like this
 ```
 <html>
   <head>
-        <title>
-	            Hello
-			        </title>
-						  </head>
-								    <body>
-										        <h2>
-														      Hello Reegan Reader zilogic systems in reegan
-														      	    	   	            </h2>
-																						    </body>
-																										    </html>
-
+    <title>
+      Hello
+    </title>
+  </head>
+  <body>
+    <h2>
+      Hello Reegan Reader zilogic systems in reegan
+    </h2>
+  </body>
+</html>
 ```
 
 Run basic static web page
+
 ```
 nc -lp <PORT> -q 1 < index.html
 ```
+
 for examle:
 
 > nc -lp 1234 -q 1 index.html
@@ -46,16 +47,19 @@ https://localhost:1234
 
 or
 ```
-<IP Address>:1234
+ https://<IP Address>:1234
 ```
+
 Note:
 Now open url in browser, and reload web page `cannot find the page` because netcat stops successfully after sending the contents of the HTML file
 So make a while loop
+
 > while true; do nc -l 1234 -q 1 < index.html; done
 
 **File transfer**
 
 _Transfer_
+
 ```
 nc -lp 1234 < index.html
 ```
